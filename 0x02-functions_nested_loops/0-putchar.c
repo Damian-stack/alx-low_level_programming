@@ -5,17 +5,19 @@
  *
  * Return: 0 (success)
  */
+
 int main(void)
 {
-	int i = 0
-	char text[] = "_putchar";
+	int ii;
+	char var[] = "_putchar";
+	/*length of the array var*/
+	int lenVar = sizeof(var) / sizeof(var[0]);
 
-	while (text[i] != '\0')
+	for (ii = 0; ii < lenVar - 1; ii++)
 	{
-		_putchar(text[i]);
-		i++;
+		_putchar(var[ii]);
 	}
-	_putchar('\n');
+		_putchar('\n');
 
 	return (0);
 }
